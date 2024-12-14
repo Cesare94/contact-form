@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <script src="script/script.js"></script>
+</head>
+<body>
+
+  <div class="container" id="container">
+    <h1> Contact Us</h1>
+    
+    <label for="FName" class="FName">First Name</label>
+    <label for="LName" class="LName">Last Name</label>
+    <span class="last" id="last">This field is required</span>
+    <br>
+    <input type="text" name="FName" id="FName">
+    <input type="text" name="LName" id="LName">
+    <span class="empty"></span>
+   
+    
+    <br>
+    <br>
+   
+    <label for="EAddress" class="EAddress">Email Address</label>
+    <span class="address" id="address"> Please enter a valid email address</span>
+    <br>
+    <input type="email" name="email" id="email">
+    
+    <br>
+    <br>
+
+
+    <label for="QType" class="QType">Query Type</label>
+    <span class="type" id="type">Please select a query type</span>
+    <br>
+    <div id="QType">
+      <div class="GEnquiry">
+        <input type="radio" name="general" id="general"><span class="general">General Enquiry</span>
+      </div>
+  
+      <div class="SRequest"> 
+        <input type="radio" name="support" id="support"><span class="support">Support Request</span>
+      </div>
+    </div>
+    
+  
+    <br>
+
+    <label for="message" class="message">Message</label>
+    <span class="ErrorM" id="ErrorM"> This field is required</span>
+     <br>
+     <textarea name="comment" id="comment"></textarea>
+
+    <br>
+    <br>
+
+    <input type="checkbox" name="access" id="access"> <span class="access" id="accessA">I consent to being contacted by the team</span>
+    <span class="ErrorA" id="ErrorA">To submit this form, please consent to being contacted</span>
+
+    <br>
+    <button type="button" id="submit" class="submit">Submit</button>
+
+
+  </div>
+
+    <div class="sent" id="sent">
+      <h1>Message Sent</h1>
+      <p> Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+
+
+
+</body>
+</html>

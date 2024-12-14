@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    background-color: hsl(148, 38%, 91%);
+}
+
+.container {
+    width: 680px;
+    margin: 10% auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2%;
+    border-radius: 10px;
+}
+
+
+.container span {
+    font-size: 12px;
+}
+
+
+
+
+/* INPUT FIRST NAME*/
+#FName {
+    padding: 2%;
+    width: 48%;
+    margin-top: 10px;
+    border-radius: 5px;
+    
+}
+
+
+/* LABEL LAST NAME*/
+
+.LName {
+    position: relative;
+    left: 37%;
+    
+}
+
+
+/* INPUT LAST NAME*/
+ #LName {
+    margin-left: 10px;
+    padding: 2%;
+    width: 48%;
+    border-radius: 5px;
+
+}
+
+
+/* EMAIL ADDRESS INPUT*/
+
+#email {
+    width: 98%;
+    padding: 2%;
+    border-radius: 5px;
+    margin-top: 10px;
+  
+
+}
+
+/* BOX CONTENITORE*/
+#QType {
+    display: flex;
+
+}
+
+/* DIV GENERAL ENQUIRY*/
+.GEnquiry {
+    border: 1px solid black;
+    width: 48%;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    padding: 2%;
+
+}
+
+
+
+/* DIV SUPPORT REQUEST*/
+.SRequest {
+    border: 1px solid black;
+    width: 48%;
+    margin-left: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 2%;
+ 
+}
+
+/* INPUT PER GENERAL*/
+#general {
+    margin-top: 8px;
+    margin-left: 20px;
+    cursor: pointer;
+  
+}
+
+
+/* SPAN GENERAL*/
+.general {
+    margin-left: 10px;
+    
+}
+
+/* INPUT PER SUPPORT*/
+
+#support {
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+
+/* SPAN SUPPORT*/
+.support {
+    margin-left: 10px;
+}
+
+/* AREA COMMENTI */
+
+#comment {
+    margin-top: 10px;
+    width: 98%;
+    border-radius: 5px;
+    padding: 5%;
+   
+}
+
+/* CHECKBOX CONSENSO */
+
+#access {
+    cursor: pointer;
+    
+}
+/* AREA CONSENSO SPAN */
+
+.access {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+
+/* SUBMIT BUTTON */
+
+
+.submit {
+    margin-top: 20px;
+    width: 98%;
+    padding: 2%;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+
+/* MESSAGE ERROR*/
+
+
+
+.last {
+    color: hsl(0, 66%, 54%);
+    position: relative;
+    left: 53%;
+    display: none;    
+}
+
+.empty {
+    display: none;
+}
+
+
+.address {
+    position: relative;
+    left: 51%;
+    color: hsl(0, 66%, 54%);
+    display: none;
+}
+
+.type {
+    color: hsl(0, 66%, 54%);
+    position: relative;
+    left: 62%;
+    display: none;
+}
+
+.ErrorM {
+    color: hsl(0, 66%, 54%);
+    position: relative;
+    left: 69%;
+    display: none;
+}
+
+.ErrorA {
+    color: hsl(0, 66%, 54%);
+    position: relative;
+    display: none;
+}
+
+
+/* GESTIONE MESSAGGIO DI INVIO*/
+
+.sent {
+    border: 1px solid black;
+    width: 490px;
+    text-align: center;
+    padding: 2%;
+    margin: 10% 35%;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(169, 82%, 27%);
+    display: none;
+    border-radius: 20px;
+}
+
+
+/* media query per small devices*/
+
+@media screen and (max-width: 560px) {
+    
+    .container {
+        width: 300px;
+        display: grid;
+        grid-template-areas: 
+                    'contact'
+                    'FName'
+                    'IName'
+                    'last'
+                    'LName'
+                    'ILast'
+                    'empty'
+                    'Eaddress'
+                    'email'
+                    'address'
+                    'QType'
+                    'QTypeB'
+                    'type'
+                    'message'
+                    'comment'
+                    'errorM'
+                    'access' 'Saccess'
+                    'errorA'
+
+    }
+
+    .container h1 {
+        text-align: center;
+        grid-area: contact;
+    }
+
+    /* INPUT FIRST NAME*/
+
+#FName {
+
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    grid-area: IName;
+    
+}
+
+
+
+
+/* LABEL FIRST AND LAST NAME*/
+
+.FName {
+    grid-area: FName;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.LName {
+    margin-top: 40px;
+    grid-area: LName;
+    
+}
+
+
+/* INPUT LAST NAME*/
+
+ #LName {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+    grid-area: ILast;
+    
+
+}
+
+/* label ADDRESS INPUT*/
+
+.EAddress {
+    grid-area: Eaddress;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* EMAIL ADDRESS INPUT*/
+
+#email {
+    width: 100%;
+    margin-top: 10px;
+    grid-area: email;
+  
+
+}
+
+/* label Query tipe*/
+
+.QType {
+    grid-area: QType;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* BOX CONTENITORE*/
+
+#QType {
+    grid-area: QTypeB;
+
+}
+
+
+/* INPUT PER GENERAL*/
+#general {
+    margin-left: 42%;
+  
+}
+
+
+/* SPAN GENERAL*/
+.general {
+    
+    display: inline-block;
+    padding-left: 7px;
+    
+    
+}
+
+/* INPUT PER SUPPORT*/
+
+#support {
+    margin-left: 42%;
+   
+    
+}
+
+/* SPAN SUPPORT*/
+.support {
+    display: inline-block;
+    padding-left: 7px;
+}
+
+/* AREA COMMENTI */
+
+.message {
+    grid-area: message;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#comment {
+   grid-area: comment;
+    width: 100%;
+  
+   
+}
+
+/* CHECKBOX CONSENSO */
+
+#access {
+    grid-area: access;
+    margin-top: 40px;
+    position: relative;
+    right: 47%;
+    
+}
+/* AREA CONSENSO SPAN */
+
+.access {
+    margin-left: 0px;
+    position: relative;
+    left: 30px;
+    bottom: 17px;
+    grid-area: Saccess;
+}
+
+
+/* SUBMIT BUTTON */
+
+
+.submit {
+    margin-top: 0;
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 20%;
+    
+}
+
+/* MESSAGE ERROR*/
+
+
+
+.last {
+    left: 0%;
+    grid-area: last;
+    
+    
+}
+
+.empty {
+    color: hsl(0, 66%, 54%);
+    grid-area: empty;
+    display: inline-block;
+}
+
+.address {
+    left: 0%;
+    grid-area: address
+}
+
+.type {
+    color: hsl(0, 66%, 54%);
+    left: 25%;
+    grid-area: type;
+    
+}
+
+.ErrorM {
+    color: hsl(0, 66%, 54%);
+    position: relative;
+    left: 0%;
+    display: none;
+    grid-area: errorM;
+}
+
+.ErrorA {
+    color: hsl(0, 66%, 54%);
+    position: relative;
+    display: none;
+    grid-area: errorA;
+}
+
+/* GESTIONE MESSAGGIO DI INVIO*/
+
+.sent {
+    border-radius: 20px;
+    width: 290px;
+    text-align: center;
+    padding: 2%;
+    margin: 30% 20%;
+
+ 
+}
+
+
+    
+    
+
+}
